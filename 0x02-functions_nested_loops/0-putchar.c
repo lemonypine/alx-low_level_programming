@@ -1,11 +1,19 @@
+#include "main.h"
 /**
-* main - entery point
-* Return: 0 (success)
+* printString - prints characters "_putchar"
+*
+* Return: void
 */
-#include<stdio.h>
-int main(void)
+
+void printString(void)
 {
-	printf("putchar_");
-	printf("\n");
-	return (0);
+	char string[] = "_putchar";
+	int i;
+
+	for (i = 0; string[i] != 0; i++)
+	{
+		_putchar(i);
+		_putchar('\n');
+	}
+
 }
