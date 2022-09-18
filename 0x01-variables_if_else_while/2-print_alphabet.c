@@ -8,12 +8,11 @@
 */
 int main(void)
 {
-	char c;
+	int c;
 
-	while (c <= 'a' && c >= 'z')
+	for (c ='a'; c <= 'z'; c++)
 	{
 		putchar(c);
-		c++;
 	}
 	return (0);
 }
